@@ -1,28 +1,38 @@
+:root {
+    --background-color:#101010;
+    --border-color:#300;
+    --darkest-color: darkred;
+    --darker-color: tomato;
+    --text-color: silver;
+    --title-color:slategray;
+    --lighter-color: lightsalmon;
+    --lightest-color: lightgoldenrodyellow;
+    --animation-time: 10s;
+    --transform-time: 0.2s;
+}
+
 body {
-    font-family: Antic, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-family: Antic, Tahoma, Verdana, sans-serif;
+    font-size: 15px;
     max-width: 960px;
     margin: auto;
-    background-color: #101010;
-    color:silver;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 h1 {
     font-size: 3em;
-    letter-spacing: .6em;
+    letter-spacing: .5em;
     padding-top: 1em;
     padding-bottom: 1em;
-    color:white;
-    background-image: url(https://avatars.githubusercontent.com/u/21192432);
-    background-position:center right;
-    background-repeat: no-repeat;
-    background-size:2em;
+    color:var(--lightest-color);
+    filter: drop-shadow(0 0 0.1em var(--darker-color));
 }
 
 h2 {
     font-size: 1.5em;
     padding-bottom: 1em;
-    color:slategray
+    color:var(--title-color);
 }
 
 main { 
@@ -34,7 +44,7 @@ main {
 header {
     text-align: center;
     margin: auto 2em;
-    color:tomato
+    color:var(--darkest-color);
 }
 
 section {
@@ -42,16 +52,20 @@ section {
 }
 
 a {
-    color:tomato;
+    color:var(--lighter-color);
 }
 
 a:visited {
-    color: darkred;
+    color: var(--darker-color);
+}
+
+a:hover {
+    color: var(--lightest-color);
 }
 
 i {
     margin: auto .5em;
-    color:lightgoldenrodyellow;
+    color:var(--lightest-color);
 }
 
 p {
@@ -60,7 +74,7 @@ p {
 
 hr {
     border: none;
-    background-color: #300;
+    background-color:var(--border-color);
     height: 1px;
 }
 
@@ -70,5 +84,45 @@ h1, h2 {
 }
 
 #mainLeft {
-    border-right: 1px solid #300;
+    border-right: 1px solid var(--border-color);
  }
+
+.company {
+    color:var(--lighter-color);
+}
+
+.profile {
+    width: 7.7em;
+    border-radius: 35%;
+    border: 2px solid var(--lightest-color);
+    filter: drop-shadow(0 0 0.6em var(--darker-color));
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 10px;
+    transition: transform var(--transform-time);
+}
+.profile:hover {
+    transform: scale(1.1);
+}
+.role {
+    color:var(--darker-color);
+    filter: drop-shadow(0 0 0.1em var(--darkest-color));
+    animation: role var(--animation-time) infinite;
+}
+
+.role1 {
+    animation-delay: 0;
+}
+.role2 {
+    animation-delay: calc( var(--animation-time) / 3);
+}
+.role3 {
+    animation-delay: calc(2 * var(--animation-time) / 3);
+}
+
+@keyframes role {
+    50% {
+        color:var(--lightest-color);
+        filter: drop-shadow(0 0 0.3em var(--lightest-color));
+    }
+}
