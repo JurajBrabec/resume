@@ -1,8 +1,6 @@
 # Juraj Brabec
 
-**Bratislava, Slovakia | +421 915 744 997 | juraj@brabec.sk**
-
-**[Portfolio Website](https://jurajbrabec.github.io/resume/) | [LinkedIn](https://linkedin.com/in/juraj-brabec) | [GitHub](https://github.com/JurajBrabec)**
+**Bratislava, Slovakia | +421 915 744 997 | juraj@brabec.sk** | [Portfolio Website](https://jurajbrabec.github.io/resume/) | [LinkedIn](https://linkedin.com/in/juraj-brabec) | [GitHub](https://github.com/JurajBrabec)
 
 ---
 
@@ -15,7 +13,7 @@ Senior DevOps and Platform Engineer with over 20 years of foundational IT experi
 ### Core Technical Skills
 
 - **Container Orchestration**: Kubernetes (K8s), RedHat OpenShift, Helm, Minikube, MicroK8s
-- **Infrastructure & CI/CD**: Terraform, Ansible, GitHub Actions, Docker
+- **Infrastructure & CI/CD**: Azure Public Cloud, Hetzner Cloud, Terraform, Ansible, GitHub Actions, Docker
 - **Observability Stack**: Prometheus, Loki, Grafana, Backup & Restore Platforms (Veritas, HP)
 - **Backend & APIs**: Node.js, Express, PHP, JavaScript (React), REST APIs (NetBackup API)
 - **Systems & Infrastructure**: Linux/Bash, Nginx, Apache, MySQL/MariaDB, Windows Server Platform
@@ -26,7 +24,7 @@ Senior DevOps and Platform Engineer with over 20 years of foundational IT experi
 
 **DevOps / Backend Engineer** | _Excalibur s.r.o._ | 06/2024 – 05/2026
 
-- **Kubernetes Management**: Managed and optimized a multi-stage cluster topology spanning **Dev, Staging, and Production environments**, utilizing **Minikube and MicroK8s** for local development parity.
+- **Kubernetes Management**: Managed and optimized a multi-stage cluster topology spanning **Dev, Staging, and Production environments** on Azure Public Cloud (AKS - Azure Kubernetes Services), utilizing **Minikube and MicroK8s** for local development parity.
 - **CI/CD Pipeline Automation**: Designed and implemented automated continuous integration (CI) workflows using **GitHub Actions** to accelerate containerized software deployment.
 - **Infrastructure as Code**: Package-managed Kubernetes deployments by developing custom **Helm charts**, standardizing microservice configurations across environments.
 - **Configuration Management**: Leveraged **Ansible** to automate configuration tasks, ensuring environmental consistency and preventing configuration drift.
